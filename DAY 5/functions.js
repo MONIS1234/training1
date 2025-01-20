@@ -95,15 +95,35 @@
 // console.log(users);
 // users.map(function(user){console.log(user)})
 
-var a =10;
-let b=45;
+// var a =10;
+// let b=45;
+// function x(){
+//     var user = "Vasanth";
+//     let company = "Google";
+//     const sal = 1234567890;
+//     console.log(user);
+//     console.log(company);
+//     console.log(sal);
+//     console.log(a , b);
+// }
+// x();
+
 function x(){
-    var user = "Vasanth";
-    let company = "Google";
-    const sal = 1234567890;
-    console.log(user);
-    console.log(company);
-    console.log(sal);
-    console.log(a , b);
+    let a=10;
+    const b=20;
+    console.log(a,b);
+    function y(){
+        let p="Js";
+        var q="ReactJS";
+        console.log(p,q);
+        function z(){
+            const username="Harish";
+            console.log(username);
+            console.log(a);
+            console.log(q);
+        }
+        z();
+    }
+    y();
 }
 x();
