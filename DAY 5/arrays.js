@@ -116,3 +116,17 @@ let userDetails =[
 userDetails.map((user)=>{
 console.log(user.name);
 })
+
+let userData={
+    name:"Sathvik",
+    age:25,
+    city:"Karimnagar"
+
+};
+console.log(userData.name,typeof(userData));
+
+let x=JSON.stringify(userData);
+console.log(x,typeof(x));
+
+let y=JSON.parse(x);
+console.log(y);
