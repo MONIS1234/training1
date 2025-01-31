@@ -94,39 +94,108 @@
 // console.log(user1.name);
 // console.log(user2.name);
 
-let userDetails =[
+// let userDetails =[
+//     {
+//         name:"sathvik",
+//         city:"Karimnagar"
+//     },
+//     {
+//         name:"Raghu",
+//         city:"ananthpur"
+//     },
+//     {
+//         name:"Shilpa",
+//         city:"Kammam"
+//     },
+//     {
+//         name:"Bharath",
+//         city:"Sathupalli"
+//     }
+// ];
+
+// userDetails.map((user)=>{
+// console.log(user.name);
+// })
+
+// let userData={
+//     name:"Sathvik",
+//     age:25,
+//     city:"Karimnagar"
+
+// };
+// console.log(userData.name,typeof(userData));
+
+// let x=JSON.stringify(userData);
+// console.log(x,typeof(x));
+
+// let y=JSON.parse(x);
+// console.log(y);
+
+// Take array of objects where each object contains emp_id,emp_name,emp_company,emp_salary,emp_address where emp_address further contains a object which includes two properties such as emp_city,emp_area
+// display all these employee data on the ui through js
+
+let empData=[
     {
-        name:"sathvik",
-        city:"Karimnagar"
+        emp_id: 1,
+        emp_name:"Ramesh",
+        emp_company:"Google",
+        emp_salary: 100000,
+        emp_address:{
+            emp_city:"Hyderabad",
+            emp_area:"Banjara hills"
+        }
+
     },
+
     {
-        name:"Raghu",
-        city:"ananthpur"
+        emp_id: 2,
+        emp_name:"Suresh",
+        emp_company:"Microsoft",
+        emp_salary: 200000,
+        emp_address:{
+            emp_city:"Banglore",
+            emp_area:"Mantralayam"
+        }
+
     },
+
     {
-        name:"Shilpa",
-        city:"Kammam"
+        emp_id: 3,
+        emp_name:"Ram",
+        emp_company:"GoldmanSach",
+        emp_salary: 100000,
+        emp_address:{
+            emp_city:"Warangal",
+            emp_area:"Rudrapuram"
+        }
+
     },
+
     {
-        name:"Bharath",
-        city:"Sathupalli"
+        emp_id: 4,
+        emp_name:"Somesh",
+        emp_company:"TCS",
+        emp_salary: 200000,
+        emp_address:{
+            emp_city:"Kadapa",
+            emp_area:"Gandhi nagar"
+        }
+
+    },
+
+    {
+        emp_id:5,
+        emp_name:"Rocky",
+        emp_company:"Google",
+        emp_salary: 500000,
+        emp_address:{
+            emp_city:"Chennai",
+            emp_area:"Tambaram"
+        }
+
     }
 ];
 
-userDetails.map((user)=>{
-console.log(user.name);
-})
-
-let userData={
-    name:"Sathvik",
-    age:25,
-    city:"Karimnagar"
-
-};
-console.log(userData.name,typeof(userData));
-
-let x=JSON.stringify(userData);
-console.log(x,typeof(x));
-
-let y=JSON.parse(x);
-console.log(y);
+empData.map((emp)=>{
+    document.writeln(JSON.stringify(emp))
+});

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table border="2" cellpadding="10px" cellspacing="0px">
+        <thead>
+            <tr>
+                <th>SI.no</th>
+                <th>name</th>
+                <th>company</th>
+                <th>salary</th>
+                <th>city</th>
+                <th>area</th>
+            </tr>
+        </thead>
+        <tbody id="store">
+
+        </tbody>
+    </table>
+    <script>
+        let empData = [
+            {
+                emp_id: 1,
+                emp_name: "Ramesh",
+                emp_company: "Google",
+                emp_salary: 100000,
+                emp_address: {
+                    emp_city: "Hyderabad",
+                    emp_area: "Banjara hills"
+                }
+
+            },
+
+            {
+                emp_id: 2,
+                emp_name: "Suresh",
+                emp_company: "Microsoft",
+                emp_salary: 200000,
+                emp_address: {
+                    emp_city: "Banglore",
+                    emp_area: "Mantralayam"
+                }
+
+            },
+
+            {
+                emp_id: 3,
+                emp_name: "Ram",
+                emp_company: "GoldmanSach",
+                emp_salary: 100000,
+                emp_address: {
+                    emp_city: "Warangal",
+                    emp_area: "Rudrapuram"
+                }
+
+            },
+
+            {
+                emp_id: 4,
+                emp_name: "Somesh",
+                emp_company: "TCS",
+                emp_salary: 200000,
+                emp_address: {
+                    emp_city: "Kadapa",
+                    emp_area: "Gandhi nagar"
+                }
+
+            },
+
+            {
+                emp_id: 5,
+                emp_name: "Rocky",
+                emp_company: "Google",
+                emp_salary: 500000,
+                emp_address: {
+                    emp_city: "Chennai",
+                    emp_area: "Tambaram"
+                }
+
+            }
+        ];
+
+        empData.map(user=>{
+            let store=document.getElementById("store");
+            store.innerHTML += `
+            <tr>
+                <td>${user.emp_id}</td>
+                <td>${user.emp_name}</td>
+                <td>${user.emp_company}</td>
+                <td>${user.emp_salary}</td>
+                <td>${user.emp_id}</td>
+                <td>${user.emp_id}</td>
+            </tr>
+            `
+        })
+    </script>
+</body>
+
+</html>

@@ -119,3 +119,9 @@ form.addEventListener("submit" , event=>{
     console.log(userDetails);
     sessionStorage.setItem("userData" ,JSON.stringify(userDetails) )
 })
+// create a signup form that contains 
+// usernamme(!empty),
+// email(@check,!empty),
+// password(should be 6) add
+// confirm password(Same,empty)
+// once clicked "form is submitted successfully"
